@@ -1,0 +1,165 @@
+/* color palette from <https://github.com/vuejs/theme> */
+
+body {
+background-color: rgba(142, 180, 238, 0.904);
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-align: center;
+
+}
+
+
+.logo {
+  width: 30%;
+  margin-bottom: 1%;
+}
+
+#pokedex {
+  /* background-color: rgb(231, 94, 94); */
+  /* background: linear-gradient(to right, rgb(199, 66, 66) 20%, rgb(231, 94, 94) 80%); */
+  background: linear-gradient(270deg, rgb(216, 89, 89) 82%, rgb(199, 66, 66) 80%);
+  margin: auto;
+  width: 80%;
+  height: 450px;
+  border-radius:45px;
+  margin-bottom: 5%;
+  border-radius: 20px 20px 20px 80px;
+  border: 2px solid black;
+
+}
+
+.vl {
+  border-left: 2px solid black;
+  height: 450px;
+  float:left;
+  margin-left: 18%;
+
+}
+
+#areaTela{
+  background-color: #343F4A;
+  height: 400px;
+  width: 75%;
+  margin-left: 21%;
+  margin-right: auto;
+  margin-top: 2%;
+  border-radius: 10px;
+  border: 2px double rgb(66, 18, 18);
+}
+
+#tela{
+  display: inline-block;
+  background-color: white;
+  height: 350px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius:5px;
+  margin-top: 3%;
+  border: 4px double black;
+
+}
+
+#infosPokedex{
+  display:flex;
+  flex-direction: row;
+margin: auto;
+width: 100%;
+  align-items: center;
+  margin-top: 5%;
+  justify-content: center;
+}
+
+
+#botoes{
+  margin-left: 50%;
+}
+
+.button{
+  margin-top: 1%;
+  margin-right: 5%;
+  width: 50px;
+  height: 20px;
+  float: left;
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: #52595f;
+  box-shadow: 0 2px 1px 0 rgb(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+
+.imgPokemon1{
+  width:50%;
+}
+
+
+#folder{
+  background-color: white;
+  margin: auto;
+  width: 80%;
+  height: 500px;
+  border: 1px solid black;
+  box-shadow: 0 5px 5px 0 rgb(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-bottom: 3%;
+}
+
+
+#inputHeader{
+  background-color: #f1f1f1;
+  width: 100%;
+  margin-bottom: 2%;
+  border: 0.5px solid black;
+}
+
+input {
+  margin-top: 3%;
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 3%;
+  border:0.5;
+  width: 50%
+}
+
+
+#cardsCollection {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+}
+
+#cards {
+  border: 1px double black;
+  border-radius: 12px;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  background-color: #E0E8DD;
+  width: 100px;
+  height: 150px;
+}
+
+#framePokemon{
+  background-color:  #f1f1f1;
+  width: 80%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 10%;
+  border: 1px double black;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(167, 167, 167);
+  border: 1px solid rgb(202, 201, 200);
+}
+
