@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Pokedex from './components/Pokedex.vue'
 import CardsCollection from './components/CardsCollection.vue'
+import Charts from './components/Charts.vue'
 import axios from 'axios';
 </script>
 
@@ -9,6 +10,7 @@ import axios from 'axios';
       <div class="logo"></div>
       <Pokedex/>
       <CardsCollection/>
+      <Charts/>
 
 </template>
 

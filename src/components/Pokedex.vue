@@ -39,6 +39,7 @@
 
 <script>
 import axios from 'axios';
+import api from '../services/api';
 
 export default {
   name: "Pokedex",
@@ -51,14 +52,12 @@ export default {
       height: "",
       image: "",
       type:"",
-      indice: Math.floor(Math.random() * 1126) + 1
+      indice: Math.floor(Math.random() * 800) + 1
     }
   },
   mounted(){
 
-    axios
-      .get("https://pokeapi.co/api/v2/pokemon?limit=1126")
-      .then((response) =>{
+    api.get(this.url).then((response) =>{
         // console.log(response)
         this.pokemons = response.data.results;
       })

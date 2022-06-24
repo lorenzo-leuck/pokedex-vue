@@ -154,13 +154,43 @@ input {
   border: 1px double black;
 }
 
-*::-webkit-scrollbar {
-  width: 5px;
+
+#charts {
+  border-radius: 35px;
+  width: 80%;
+  height: 450px;
+  margin: auto;
+  background-color: #FBDA61;
+  background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+  
+
 }
 
-*::-webkit-scrollbar-thumb {
-  background-color: rgb(167, 167, 167);
-  border: 1px solid rgb(202, 201, 200);
+#barchart {
+  height: 1px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 40%;
+  margin-left: 5%;
+
+
+}
+
+canvas {
+  background-color: white;
+  border-radius: 20px;
+}
+
+
+#linechart {
+  height: 10px;
+  margin-left: 55%;
+
+  width: 40%;
+
 }
 
 @media (max-width: 800px) {
@@ -168,14 +198,18 @@ input {
 #tela{
   overflow-y: scroll;
 }
-
-
   #infosPokedex{
     display:flex;
     flex-direction: column;
-    
   }
-  
+}
 
 
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(167, 167, 167);
+  border: 1px solid rgb(202, 201, 200);
 }

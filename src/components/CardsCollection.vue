@@ -6,7 +6,7 @@
      <input
           v-model="search"
           label="Pesquisar"
-          placeholder="Digite o nome do pokemon"
+          placeholder="Buscar Pokémon"
         >
       </div>
 
@@ -33,6 +33,7 @@
 
 <script>
 import axios from 'axios';
+import api from '../services/api';
 
 export default {
   name: "Pokedex",
@@ -44,9 +45,8 @@ export default {
     }
   },
   mounted(){
-    axios
-      .get("https://pokeapi.co/api/v2/pokemon?limit=1000")
-      .then((response) =>{
+  
+  api.get(this.url).then((response) =>{
         // console.log(response)
         this.pokemons = response.data.results;
       })
