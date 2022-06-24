@@ -19,7 +19,7 @@ text-align: center;
   background: linear-gradient(270deg, rgb(216, 89, 89) 82%, rgb(199, 66, 66) 80%);
   margin: auto;
   width: 80%;
-  height: 450px;
+  height: 470px;
   border-radius:45px;
   margin-bottom: 5%;
   border-radius: 20px 20px 20px 80px;
@@ -29,7 +29,7 @@ text-align: center;
 
 .vl {
   border-left: 2px solid black;
-  height: 450px;
+  height: 470px;
   float:left;
   margin-left: 18%;
 
@@ -72,6 +72,7 @@ width: 100%;
 
 #botoes{
   margin-left: 50%;
+  margin-top:0.5%
 }
 
 .button{
@@ -93,6 +94,16 @@ width: 100%;
 }
 
 
+#inputHeader{
+  background-color: #f1f1f1;
+  width: 80%;
+  margin: auto;
+  border-radius: 20px 20px 0 0;
+  border: 1px solid black;
+  margin-bottom: -1%;
+  border-bottom-style: none
+}
+
 #folder{
   background-color: white;
   margin: auto;
@@ -103,15 +114,15 @@ width: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
   margin-bottom: 3%;
+  border-radius: 0 0 20px 20px;
+  padding-top: 2%;
+  z-index: -1;
+  border-bottom-style: none
+  
 }
 
 
-#inputHeader{
-  background-color: #f1f1f1;
-  width: 100%;
-  margin-bottom: 2%;
-  border: 0.5px solid black;
-}
+
 
 input {
   margin-top: 3%;
@@ -132,6 +143,7 @@ input {
   flex-wrap: wrap;
   align-items: center;
   align-content: space-around;
+
 }
 
 #cards {
@@ -195,13 +207,66 @@ canvas {
 
 @media (max-width: 800px) {
 
+
+  #pokedex {
+    height:400px;
+    margin-bottom: 10%;
+  }
+
+  #botoes{
+    margin-top:2%;
+    margin-left: 42%;
+  }
+
+  .vl {
+    height:400px;
+  }
+
+
+  #areaTela{
+    height:350px;
+  }
+
 #tela{
   overflow-y: scroll;
+  height:300px;
 }
+
   #infosPokedex{
+    margin-top: 0;
     display:flex;
     flex-direction: column;
   }
+
+  .imgPokemon1{
+    margin-bottom: -20px;
+  }
+  
+
+
+  #charts {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    margin-bottom: 10%;
+    margin-top: 10%;
+  }
+
+  #barchart {
+    float: none;
+    width: 60%;
+    position: absolute;
+    margin-left:10%;
+  }
+  #linechart {
+    float:none;
+    margin-top: 70%;
+    margin-left:10%;
+    width: 60%;
+    position: absolute;
+  }
+
+
 }
 
 

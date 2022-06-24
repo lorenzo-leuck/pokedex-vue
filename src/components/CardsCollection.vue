@@ -1,14 +1,15 @@
 <template>
-
-  <div id="folder" v-if="Object.keys(pokemons).length>0">
-
     <div id="inputHeader">
      <input
           v-model="search"
           label="Pesquisar"
           placeholder="Buscar Pokémon"
+          @compositionupdate="compositionUpdate($event)"
         >
       </div>
+
+  <div id="folder" v-if="Object.keys(pokemons).length>0">
+
 
 <div id="cardsCollection">
  <div id="cards" v-for="pokemon in filtered_pokemons" :key="pokemon.name">
@@ -58,14 +59,21 @@ methods: {
   },
   get_name(pokemon){
     return pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
-  }
+  },
+
+compositionUpdate: function(event)
+    {
+        this.search = event.data;
+    }
+
+
 },
 
   computed: {
 
     filtered_pokemons() {
       return this.pokemons.filter((item) => {
-        return item.name.includes(this.search);
+        return item.name.startsWith(this.search);
       });
     },
   }

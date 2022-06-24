@@ -1,4 +1,21 @@
 
+<template>
+  <div id="charts">
+
+    <div>
+     <Bar :chart-data="typesData" id="barchart"/>
+</div>
+
+      <div>
+
+     <Line :chart-data="generationsData" id="linechart"/>
+</div>
+
+  </div>
+</template>
+
+
+
 <script>
 
 import axios from 'axios';
@@ -102,18 +119,3 @@ return arr;
 
 };
 </script>
-
-<template>
-  <div id="charts">
-
-    <div>
-     <Bar :chart-data="typesData" id="barchart"/>
-</div>
-
-      <div>
-
-     <Line :chart-data="generationsData" id="linechart"/>
-</div>
-
-  </div>
-</template>
