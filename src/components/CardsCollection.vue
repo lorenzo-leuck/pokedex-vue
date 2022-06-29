@@ -45,7 +45,7 @@ export default {
       search: ""
     }
   },
-  created(){
+  mounted(){
   
   api.get(this.url).then((response) =>{
         // console.log(response)
