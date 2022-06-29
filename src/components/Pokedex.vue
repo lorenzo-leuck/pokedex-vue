@@ -55,7 +55,7 @@ export default {
       indice: Math.floor(Math.random() * 800) + 1
     }
   },
-  mounted(){
+  created(){
 
     api.get(this.url).then((response) =>{
         // console.log(response)

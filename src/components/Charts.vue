@@ -39,7 +39,7 @@ export default {
     }
   },
   
-async mounted(){
+async created(){
 
   var typesNamesData = await this.getTypeNames([])
   var typesCountsData = await this.getTypeCounts(typesNamesData,[])
